@@ -9,3 +9,4 @@ form to channel_id=https://www.googleapis.com/youtube/v3/channels?key=
 AIzaSyASK8EfrYjP-Xz8RGUczBzOTKH0ovtn2nU&forUsername=Apple&part=id
 
 apple id=UCE_M8A5yxnLfW0KghEeajjw
+AIzaSyASK8EfrYjP-Xz8RGUczBzOTKH0ovtn2nU =key

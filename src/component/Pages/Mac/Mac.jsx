@@ -26,7 +26,7 @@ class Mac extends Component{
         return (
             <div>
 				<section className="internal-page-wrapper">
-					<div className="container"> 
+					<div className="container">
 						<div className="row justify-content-center text-center">
 							<div className="col-12">
 								<div className="title-wraper large">
@@ -35,7 +35,7 @@ class Mac extends Component{
 								{/* <div className="brief-description">
 									The best for the brightest
 								</div> */}
-							</div> 
+							</div>
 						</div>
 						{
 							this.state.products.map((product) => {
@@ -67,34 +67,34 @@ class Mac extends Component{
 										<div className="description-wraper">
 											{product.Brief}
 										</div>
-										
-										
+
+
 										<div className="links-wrapper">
 											<ul>
 												<li>
 													<Link to={productPage}>Learn more
 													</Link>
 												</li>
-											</ul> 
+											</ul>
 										</div>
-									</div> 
+									</div>
 
 									<div  className={`col-sm-12 col-md-6 order-${order2}`}>
 										<div className="prodict-image">
 											<img src={ product.img}/>
 										</div>
-									</div> 
-								</div>								
+									</div>
+								</div>
 								;
-								return productDiv; 
+								return productDiv;
 							})
 						}
-				
+
 					</div>
 				</section>
 			</div>
         )
     }
-			
+
 }
 export default Mac;

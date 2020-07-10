@@ -1,0 +1,34 @@
+{
+    "products":[
+        {
+          "Id": "music",
+          "img": "https://www.apple.com/v/music/m/images/overview/homepod__mjqu3izydl2m_large.jpg",
+          "Url": "https://www.apple.com/music",
+          "Title": "HomePod",
+          "Brief": "The new sound of home.",
+          "StartPrice": "",
+          "PriceRange": "",
+          "Description": ""
+        },
+        {
+          "Id": "music",
+          "img": "https://www.apple.com/v/music/m/images/overview/ipod__d53klaz6zj42_large.jpg",
+          "Url": "https://www.apple.com/music",
+          "Title": "iPod touch",
+          "Brief": "The music you love. On the go.",
+          "StartPrice": "",
+          "PriceRange": "",
+          "Description": ""
+        },
+        {
+          "Id": "music",
+          "img": "https://www.apple.com/v/music/m/images/overview/accessories__e48k423aqcq6_large.jpg",
+          "Url": "https://www.apple.com/music",
+          "Title": "Accessories",
+          "Brief": "Listen with a new look.",
+          "StartPrice": "",
+          "PriceRange": "",
+          "Description": ""
+        }
+      ]
+  }

@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
- class Watch extends Component {
-    constructor(){
+class Mac extends Component{
+	constructor(){
         super();
         this.state = {
             products: []
         }
     }
     componentDidMount(){
-        fetch("./watch.json")
+        fetch("./tv.json")
             .then(res => res.json())
             .then((x) => {
 
@@ -20,8 +20,7 @@ import { Link } from 'react-router-dom';
                 })
             })
     }
-
-    render() {
+     render(){
         console.log(this.state.products)
         let order = 1;
         return (
@@ -31,7 +30,7 @@ import { Link } from 'react-router-dom';
 						<div className="row justify-content-center text-center">
 							<div className="col-12">
 								<div className="title-wraper large">
-                                
+
 								</div>
 								{/* <div className="brief-description">
 									The best for the brightest
@@ -56,19 +55,20 @@ import { Link } from 'react-router-dom';
 								let productDiv =
 								<div key={id} className="row justify-content-center text-center product-holder h-100">
 									<div className={`col-sm-12 col-md-6 my-auto order-${order1}`}>
+										<div className ="new-alert">
+											{product.Alert}
+										</div>
+									<div className="monthly-price inch">
+												{product.PriceRange}
+											</div>
 										<div className="product-title">
-                                        <img src={ product.Title}/>
-
+                                        { product.Title}
 										</div>
 										<div className="description-wraper">
-											{product.Description}
+											{product.Brief}
 										</div>
-										<div className="price-wrapper">
-											{`Starting at ${product.StartPrice}`}
-										</div>
-										<div className="monthly-price">
-											{product.PriceRange}
-										</div>
+
+
 										<div className="links-wrapper">
 											<ul>
 												<li>
@@ -95,6 +95,6 @@ import { Link } from 'react-router-dom';
 			</div>
         )
     }
-}
 
-export default Watch
+}
+export default Mac;

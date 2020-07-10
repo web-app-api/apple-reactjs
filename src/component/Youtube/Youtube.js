@@ -1,8 +1,8 @@
 import React, {Component}from "react"
-import './Youtub.css'
+import './Youtube.css'
 import style from '../../css/styles.css';
 
-class Youtub extends Component{
+class Youtube extends Component{
   constructor(){
     super();
     this.state = {
@@ -12,7 +12,7 @@ class Youtub extends Component{
 
 
 componentDidMount(){
-  fetch("https://www.googleapis.com/youtube/v3/search?key=AIzaSyASK8EfrYjP-Xz8RGUczBzOTKH0ovtn2nU&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=10")
+  fetch("https://www.googleapis.com/youtube/v3/search?key=AIzaSyDGQfoq4fvUJEw2jitTMIAkj1W7lqhnfHM&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=12")
   .then(response => response.json())
   .then((data) => {
     const youTubeVideos = data.items;
@@ -26,7 +26,7 @@ componentDidMount(){
 };
 
 render () {
-  // console.log(this.state.youTubeVideos);
+  console.log(this.state.youTubeVideos);
 
   return (
     <div className="allVideosWrapper">
@@ -79,4 +79,4 @@ render () {
 }
 
 
-export default Youtub;
+export default Youtube;

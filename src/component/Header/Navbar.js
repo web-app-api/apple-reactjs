@@ -1,46 +1,84 @@
+
+
 import React, {Component}from "react"
-import Navlink from "./Navlink"
-import logo from "../../images/icons/logo-sm.png"
-import search from "../../images/icons/search-icon-sm.png"
-import cart from "../../images/icons/cart-sm.png"
-import style from '../../css/styles.css';
+import './Header.css';
 
 
 class Navbar extends Component {
-    render() {
-        return (
-            <div className="nav-wrapper fixed-top">
-                <div className="container">
-                    <nav className="navbar navbar-toggleable-sm navbar-expand-md">
-                        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                            ☰
+    componentDidMount(){
+            const selectElement = (element) =>document.querySelector(element);
 
-                        </button>
-
-                        <a className="aa navbar-brand mx-auto" href="#"><img src={logo}/></a>
-                        <a className="bb navbar-brand ml-auto" href="#"><img src={cart}/></a>
-
-                        <div className="navbar-collapse collapse">
-                            <ul className="navbar-nav nav-justified w-100 nav-fill">
-
-                                <Navlink linkUrl ="#"linkName="Mac"/>
-                                <Navlink linkUrl ="#"linkName="iPhone"/>
-                                <Navlink linkUrl ="#"linkName="iPad"/>
-                                <Navlink linkUrl ="#"linkName="Watch"/>
-                                <Navlink linkUrl ="#"linkName="TV"/>
-                                <Navlink linkUrl ="#"linkName="Music"/>
-                                <Navlink linkUrl ="#"linkName="Support"/>
-                                <Navlink linkUrl ="#" Image = {<img src={search}/>}/>
-                                <Navlink linkUrl ="#" Image = {<img src={cart}/>}/>
-
-
-
-                            </ul>
+            selectElement('.mobile-menu').addEventListener('click' , ()=>{
+            selectElement('header').classList.toggle('active')
+            })
+    }
+       render() {
+            return (
+        <header>
+        <div className="container2">
+            <nav>
+                <ul className="nav-list nav-list-mobile">
+                    <li className="nav-item">
+                        <div className="mobile-menu">
+                            <span className="line line-top"></span>
+                            <span className="line line-bottom"></span>
                         </div>
-                    </nav>
-                </div>
-	        </div>
-        );
+                    </li>
+                    <li className="nav-item">
+                        <a href="index.html" className="nav-link nav-link-apple"></a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link nav-link-bag"></a>
+                    </li>
+
+                </ul>
+                {/* <!-- /.nav-list nav-list-mobile -->  */}
+                <ul className="nav-list nav-list-larger">
+                    <li className="nav-item search-hiden">
+
+                        <input className="nav-link nav-link-searchbar" type="text"
+                            placeholder="&#xF002; Search apple.com"
+                            style={{fontFamily:"Arial, FontAwesome"}} />
+
+                    </li>
+                    <li className="nav-item nav-item-hidden">
+                        <a href="/" className="nav-link nav-link-apple"></a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="mac" className="nav-link">Mac</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="iPad" className="nav-link">iPad</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="iphone" className="nav-link">iPhone</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="watch" className="nav-link">Watch</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="tv" className="nav-link">TV</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="music" className="nav-link">Music</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link">Support</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link nav-link-search"></a>
+                    </li>
+                    <li className="nav-item">
+                            <a href="#" className="nav-link nav-link-bag"></a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+    )
     }
 }
 

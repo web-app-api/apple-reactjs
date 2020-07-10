@@ -1,7 +1,8 @@
 import React, {Component } from 'react';
 import Structure from "../Containts/Structure"
+import './SecondContaints.css';
 
-class SecondContaints extends Component {
+class SecondContaint extends Component {
 
     render() {
         return (
@@ -14,4 +15,4 @@ class SecondContaints extends Component {
          );
     }
 }
-export default SecondContaints;
+export default SecondContaint;
