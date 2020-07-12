@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ac818cd9.chunk.css",
+    "main.js": "/static/js/main.576682f1.chunk.js",
+    "main.js.map": "/static/js/main.576682f1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.13b95f7f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.13b95f7f.js.map",
+    "static/js/2.c57dd4ac.chunk.js": "/static/js/2.c57dd4ac.chunk.js",
+    "static/js/2.c57dd4ac.chunk.js.map": "/static/js/2.c57dd4ac.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0b9f24301162be05641aa9555f871cca.js": "/precache-manifest.0b9f24301162be05641aa9555f871cca.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.ac818cd9.chunk.css.map": "/static/css/main.ac818cd9.chunk.css.map",
+    "static/js/2.c57dd4ac.chunk.js.LICENSE.txt": "/static/js/2.c57dd4ac.chunk.js.LICENSE.txt",
+    "static/media/SixthContaints.css": "/static/media/Card_small.45b2503e.jpg",
+    "static/media/styles.css": "/static/media/watch.aa3dc733.jpg",
+    "static/media/Header.css": "/static/media/search.8dd1210f.svg",
+    "static/media/FifthContaint.css": "/static/media/central_park_sm.edf94f2f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.13b95f7f.js",
+    "static/js/2.c57dd4ac.chunk.js",
+    "static/css/main.ac818cd9.chunk.css",
+    "static/js/main.576682f1.chunk.js"
+  ]
+}

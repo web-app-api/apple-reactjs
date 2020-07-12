@@ -1,0 +1,47 @@
+{
+    "products":[
+        {
+          "Id": "MacBookPro13",
+          "img": "https://www.apple.com/v/ipad/home/bd/images/overview/ipad_pro_hero__c60u09fxbrsm_large.jpg",
+          "Url": "https://www.apple.com/ipad/",
+          "Title": "iPad Pro",
+          "Brief": "Power. Moves..",
+          "PriceRange": "13-inch model",
+          "Alert": "New"
+
+
+
+        },
+        {
+          "Id": "iPad Air",
+          "img": "https://www.apple.com//v/ipad/home/bd/images/overview/ipad_air__c8xht6h7g7au_large.jpg",
+          "Url": "https://www.apple.com/ipad/",
+          "Title": "iPad Air",
+          "Brief": "The best for the brightest.",
+          "PriceRange": "16-inch model"
+
+
+        },
+        {
+            "Id": "iPad",
+            "img": "https://www.apple.com/v/ipad/home/bd/images/overview/ipad__bou485c1h6wi_large.jpg",
+            "Url": "https://www.apple.com/ipad/",
+            "Title": "iPad",
+            "Brief": "Light. Speed.",
+
+            "Alert": "New"
+
+          },
+          {
+              "Id": "iPad mini",
+              "img": "https://www.apple.com/v/ipad/home/bd/images/overview/ipad_mini__fzubv0kakkuq_large.jpg",
+              "Url": "https://www.apple.com/ipadr/",
+              "Title": "iPad mini",
+              "Brief": "Small in size.Big on capability.",
+
+              "Alert": "New"
+
+            }
+
+      ]
+  }
